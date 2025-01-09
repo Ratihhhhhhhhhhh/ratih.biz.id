@@ -1,151 +1,44 @@
-/* Reset dan Font Dasar */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f9f9f9;
-  color: #333;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Toko Sepatu Wanita</title>
+</head>
+<body>
+  <header>
+    <h1>Toko Sepatu Wanita</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Produk</a></li>
+        <li><a href="#about">Tentang Kami</a></li>
+      </ul>
+    </nav>
+  </header>
 
-/* Header dan Navigasi */
-header {
-  background-color: #f8b5c5;
-  color: white;
-  padding: 20px 10px;
-  text-align: center;
-}
+  <main>
+    <h2>Produk Unggulan</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="assets/images/shoe1.jpg" alt="Sepatu Wanita 1">
+        <h3>Sepatu Wanita 1</h3>
+        <p>Rp 300,000</p>
+        <button>Beli Sekarang</button>
+      </div>
+    </div>
 
-header h1 {
-  margin: 0;
-}
+    <button id="changeHeaderColor">Ubah Warna Header</button>
+    <button id="increaseFont">Besar Font</button>
+    <button id="toggleFooter">Sembunyikan Footer</button>
+  </main>
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  margin: 10px 0 0 0;
-}
+  <footer>
+    <p>&copy; 2025 Toko Sepatu Wanita</p>
+  </footer>
 
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
-}
-
-/* Grid Produk */
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  padding: 20px;
-}
-
-.product {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background-color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  text-align: center;
-  padding: 15px;
-}
-
-.product img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
-
-.product h3 {
-  font-size: 18px;
-  margin: 10px 0;
-}
-
-.product p {
-  font-size: 16px;
-  color: #555;
-  margin: 5px 0;
-}
-
-/* Tombol Aksi */
-button {
-  background-color: #f06292;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
-button:hover {
-  background-color: #e91e63;
-  transform: scale(1.05);
-  transition: all 0.3s ease;
-}
-
-/* Footer */
-footer {
-  background-color: #f8b5c5;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  margin-top: 20px;
-}
-
-footer p {
-  margin: 5px 0;
-}
-
-footer a {
-  color: white;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-/* Tombol Kembali ke Atas */
-#scrollTop {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #e91e63;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 50%;
-  font-size: 16px;
-  cursor: pointer;
-  display: none;
-}
-
-#scrollTop:hover {
-  background-color: #f06292;
-}
-
-/* Responsif */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav ul li {
-    margin: 10px 0;
-  }
-
-  .product-grid {
-    grid-template-columns: 1fr;
-  }
-}
+  <script src="script.js"></script>
+  <script src="styles.js"></script>
+</body>
+</html>
