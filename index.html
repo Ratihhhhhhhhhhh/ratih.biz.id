@@ -5,25 +5,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="manifest" href="manifest.json">
-  <title>Toko Sepatu Wanita</title>
+  <title>Toko Buku</title>
 </head>
 <body>
   <header>
-    <h1>Toko Sepatu Wanita</h1>
+    <h1>Toko Buku</h1>
     <nav>
       <ul>
         <li><a href="#home">Home</a></li>
-        <li><a href="#products">Produk</a></li>
+        <li><a href="#books">Buku</a></li>
         <li><a href="#about">Tentang Kami</a></li>
       </ul>
     </nav>
   </header>
 
   <main id="home">
-    <section id="products">
-      <h2>Produk Unggulan</h2>
-      <div class="product-grid" id="product-grid">
-        <!-- Produk akan dimuat secara dinamis dari script.js -->
+    <section id="books">
+      <h2>Katalog Buku</h2>
+      <div class="book-grid" id="book-grid">
+        <!-- Daftar Buku -->
+        <div class="book">
+          <img src="assets/images/book1.jpg" alt="Buku Pemrograman">
+          <h3>Pemrograman untuk Pemula</h3>
+          <p>Rp 75,000</p>
+          <button onclick="addToCart(1)">Beli</button>
+        </div>
+        <div class="book">
+          <img src="assets/images/book2.jpg" alt="Buku Fiksi">
+          <h3>Novel Fiksi Terbaik</h3>
+          <p>Rp 120,000</p>
+          <button onclick="addToCart(2)">Beli</button>
+        </div>
+        <div class="book">
+          <img src="assets/images/book3.jpg" alt="Buku Sejarah">
+          <h3>Sejarah Dunia</h3>
+          <p>Rp 95,000</p>
+          <button onclick="addToCart(3)">Beli</button>
+        </div>
+        <div class="book">
+          <img src="assets/images/book4.jpg" alt="Buku Sains">
+          <h3>Sains untuk Kehidupan</h3>
+          <p>Rp 85,000</p>
+          <button onclick="addToCart(4)">Beli</button>
+        </div>
+        <div class="book">
+          <img src="assets/images/book5.jpg" alt="Buku Desain">
+          <h3>Belajar Desain Grafis</h3>
+          <p>Rp 110,000</p>
+          <button onclick="addToCart(5)">Beli</button>
+        </div>
+        <div class="book">
+          <img src="assets/images/book6.jpg" alt="Buku Bisnis">
+          <h3>Bisnis dan Kewirausahaan</h3>
+          <p>Rp 135,000</p>
+          <button onclick="addToCart(6)">Beli</button>
+        </div>
+        <div class="book">
+          <img src="assets/images/book7.jpg" alt="Buku Motivasi">
+          <h3>Motivasi Sukses</h3>
+          <p>Rp 90,000</p>
+          <button onclick="addToCart(7)">Beli</button>
+        </div>
+        <div class="book">
+          <img src="assets/images/book8.jpg" alt="Buku Masak">
+          <h3>Resep Masakan Nusantara</h3>
+          <p>Rp 70,000</p>
+          <button onclick="addToCart(8)">Beli</button>
+        </div>
       </div>
     </section>
 
@@ -37,7 +85,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Toko Sepatu Wanita</p>
+    <p>&copy; 2025 Toko Buku</p>
     <p>Ikuti kami di: 
       <a href="#">Facebook</a> | 
       <a href="#">Instagram</a> | 
