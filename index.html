@@ -1,22 +1,53 @@
-<html lang="id">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toko Sepatu</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="manifest" href="manifest.json">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <title>Toko Sepatu Wanita</title>
 </head>
 <body>
-    <header>
-        <h1>Selamat Datang di Toko Sepatu wanita</h1>
-    </header>
-    <main>
-        <section id="products">
-            <!-- Daftar produk sepatu akan ditampilkan di sini -->
-        </section>
-        <button id="add-to-cart">Tambah ke Keranjang</button>
-    </main>
-    <script src="app.js"></script>
-    <script src="service-worker.js"></script>
+  <header>
+    <h1>Toko Sepatu Wanita</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Produk</a></li>
+        <li><a href="#about">Tentang Kami</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section id="products">
+      <h2>Produk Unggulan</h2>
+      <div class="product-grid" id="product-grid">
+        <!-- Produk akan dimuat secara dinamis dari script.js -->
+      </div>
+    </section>
+
+    <section id="cart">
+      <h2>Keranjang Belanja</h2>
+      <ul id="cart-list">
+        <!-- Item keranjang akan ditampilkan di sini -->
+      </ul>
+      <p id="cart-total">Total: Rp 0</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Toko Sepatu Wanita</p>
+    <p>Ikuti kami di: 
+      <a href="#">Facebook</a> | 
+      <a href="#">Instagram</a> | 
+      <a href="#">Twitter</a>
+    </p>
+  </footer>
+
+  <!-- Tombol ke Atas -->
+  <button id="scrollTop" onclick="scrollToTop()">⬆ Kembali ke Atas</button>
+
+  <script src="script.js"></script>
 </body>
 </html>
